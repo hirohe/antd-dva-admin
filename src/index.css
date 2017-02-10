@@ -1,0 +1,197 @@
+/*disable all animation*/
+/*:global(*) {
+  -webkit-transition: none!important;
+  -moz-transition: none!important;
+  transition: none!important;
+}*/
+
+:global(html, body) {
+  height: 100%;
+}
+
+:global(.ant-menu-dark .ant-menu-item) {
+  color: rgba(255,255,255,0.43)!important;
+}
+:global(.ant-menu-dark) {
+  color: rgba(255,255,255,0.43)!important;
+}
+
+/*table*/
+:global(tr:nth-child(even)) {
+  background: #f3f3f3;
+}
+
+:global(.success) {
+  color: rgba(0, 128, 0, 0.71);
+}
+
+:global(.error) {
+  color: red;
+}
+
+:global(.warning) {
+  color: #ffae22;
+}
+
+/*hack*/
+:global(:root .ant-table-column-sorter .anticon-caret-down) {
+  font-size: 16px!important;
+}
+
+:global(:root .ant-table-column-sorter .anticon-caret-up) {
+  font-size: 16px!important;
+}
+:global(.ant-table-column-sorter-down) {
+  height: 8px!important;
+}
+
+:global(.ant-table-column-sorter-up) {
+  height: 8px!important;
+}
+
+:global(.ant-table-column-sorter) {
+  height: 16px!important;
+}
+
+/*hack #4637*/
+/*
+:global(.ant-table-fixed-header .ant-table-scroll .ant-table-header) {
+  padding-right: 18px
+}
+*/
+
+  /*test*/
+:global(.ant-btn-danger) {
+  color:#fff!important;
+  background-color:#d9534f!important;
+  border-color:#d43f3a!important;
+}
+:global(.ant-btn-danger) > a:only-child {
+  color: currentColor;
+}
+:global(.ant-btn-danger) > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+:global(.ant-btn-danger):hover,
+:global(.ant-btn-danger):focus {
+  color: #fff!important;
+  background-color: #c9302c!important;
+  border-color: #761c19!important;
+}
+:global(.ant-btn-danger):hover > a:only-child,
+:global(.ant-btn-danger):focus > a:only-child {
+  color: currentColor;
+}
+:global(.ant-btn-danger):hover > a:only-child:after,
+:global(.ant-btn-danger):focus > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+:global(.ant-btn-danger):active,
+:global(.ant-btn-danger).active {
+  color: #fff!important;
+  background-color: #c9302c!important;
+  border-color: #ac2925!important;
+}
+:global(.ant-btn-danger):active > a:only-child,
+:global(.ant-btn-danger).active > a:only-child {
+  color: currentColor;
+}
+:global(.ant-btn-danger):active > a:only-child:after,
+:global(.ant-btn-danger).active > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+:global(.ant-btn-danger).disabled,
+:global(.ant-btn-danger)[disabled],
+:global(.ant-btn-danger).disabled:hover,
+:global(.ant-btn-danger)[disabled]:hover,
+:global(.ant-btn-danger).disabled:focus,
+:global(.ant-btn-danger)[disabled]:focus,
+:global(.ant-btn-danger).disabled:active,
+:global(.ant-btn-danger)[disabled]:active,
+:global(.ant-btn-danger).disabled.active,
+:global(.ant-btn-danger)[disabled].active {
+  color: #ccc;
+  background-color: #d9534f!important;
+  border-color: #d43f3a!important;
+}
+:global(.ant-btn-danger).disabled > a:only-child,
+:global(.ant-btn-danger)[disabled] > a:only-child,
+:global(.ant-btn-danger).disabled:hover > a:only-child,
+:global(.ant-btn-danger)[disabled]:hover > a:only-child,
+:global(.ant-btn-danger).disabled:focus > a:only-child,
+:global(.ant-btn-danger)[disabled]:focus > a:only-child,
+:global(.ant-btn-danger).disabled:active > a:only-child,
+:global(.ant-btn-danger)[disabled]:active > a:only-child,
+:global(.ant-btn-danger).disabled.active > a:only-child,
+:global(.ant-btn-danger)[disabled].active > a:only-child {
+  color: currentColor;
+}
+:global(.ant-btn-danger).disabled > a:only-child:after,
+:global(.ant-btn-danger)[disabled] > a:only-child:after,
+:global(.ant-btn-danger).disabled:hover > a:only-child:after,
+:global(.ant-btn-danger)[disabled]:hover > a:only-child:after,
+:global(.ant-btn-danger).disabled:focus > a:only-child:after,
+:global(.ant-btn-danger)[disabled]:focus > a:only-child:after,
+:global(.ant-btn-danger).disabled:active > a:only-child:after,
+:global(.ant-btn-danger)[disabled]:active > a:only-child:after,
+:global(.ant-btn-danger).disabled.active > a:only-child:after,
+:global(.ant-btn-danger)[disabled].active > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+:global(.ant-btn-group) :global(.ant-btn-danger):not(:first-child):not(:last-child) {
+  border-right-color: #d9534f;
+  border-left-color: #d9534f;
+}
+:global(.ant-btn-group) :global(.ant-btn-danger):first-child:not(:last-child) {
+  border-right-color: #d43f3a;
+}
+:global(.ant-btn-group) :global(.ant-btn-danger):first-child:not(:last-child)[disabled] {
+  border-right-color: #d43f3a;
+}
+:global(.ant-btn-group) :global(.ant-btn-danger):last-child:not(:first-child),
+:global(.ant-btn-group) :global(.ant-btn-danger) + .ant-btn {
+  border-left-color: #d9534f;
+}
+:global(.ant-btn-group) :global(.ant-btn-danger):last-child:not(:first-child)[disabled],
+:global(.ant-btn-group) :global(.ant-btn-danger) + .ant-btn[disabled] {
+  border-left-color: #d9534f;
+}
+
+:global(.ant-btn-danger.ant-btn-clicked):after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  right: -1px;
+  border-radius: inherit;
+  border: 0 solid #761c19;
+  opacity: 0.4;
+  -webkit-animation: buttonEffect 0.36s ease-out forwards;
+  animation: buttonEffect 0.36s ease-out forwards;
+  display: block;
+}
