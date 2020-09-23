@@ -9,8 +9,8 @@
     "cookies-js": "^1.2.3",
     "dva": "^1.2.1",
     "file-saver": "^1.3.3",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0"
   },
   "devDependencies": {
     "atool-build": "^0.9.0",
